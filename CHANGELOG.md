@@ -1,5 +1,32 @@
 # Changelog
 
+## 5.5.3
+
+* Fix `useHandleCallback` compatibility with `React.StrictMode` ([#10486](https://github.com/marmelab/react-admin/pull/10486)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* [Doc] Fix `useList` usage contains incorrect code snippet ([#10491](https://github.com/marmelab/react-admin/pull/10491)) ([fzaninotto](https://github.com/fzaninotto))
+* [Doc] Add Working with Dates section to `<DatagridAG>` docs ([#10487](https://github.com/marmelab/react-admin/pull/10487)) ([slax57](https://github.com/slax57))
+* [Demo] Fix vite config in Simple and CRM demos ([#10475](https://github.com/marmelab/react-admin/pull/10475)) ([slax57](https://github.com/slax57))
+* Make the CI fail on `console.error` in tests ([#10480](https://github.com/marmelab/react-admin/pull/10480)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+
+## 5.5.2
+
+* Fix create-react-admin Vite alias and test ([#10472](https://github.com/marmelab/react-admin/pull/10472)) ([slax57](https://github.com/slax57))
+* [chore] Bump vite from 5.4.6 to 5.4.12 ([#10470](https://github.com/marmelab/react-admin/pull/10470)) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## 5.5.1
+
+* Fix TabbedForm and TabbedShowLayout with react-router v7 ([#10469](https://github.com/marmelab/react-admin/pull/10469)) ([slax57](https://github.com/slax57))
+* Simplify ra-data-localforage setup ([#10455](https://github.com/marmelab/react-admin/pull/10455)) ([djhi](https://github.com/djhi))
+* [Doc] Document how to have sourcemaps in production ([#10466](https://github.com/marmelab/react-admin/pull/10466)) ([djhi](https://github.com/djhi))
+* [Doc] Impove `scrollToTop` in buttons doc and document `_scrollToTop` in `useRedirect`  ([#10449](https://github.com/marmelab/react-admin/pull/10449)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* [Doc] Document live filtering with `ReferenceManyField` and `ReferenceManyToManyField` ([#10467](https://github.com/marmelab/react-admin/pull/10467)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* [Doc] Fix the `<ReferenceManyToManyInput mutationOption={{onError}}>` doc ([#10462](https://github.com/marmelab/react-admin/pull/10462)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* [Doc] Fix link to Spanish translation package ([#10457](https://github.com/marmelab/react-admin/pull/10457)) ([adrien-may](https://github.com/adrien-may))
+* [Doc] Udate `MultiLevelMenu` screenshot ([#10468](https://github.com/marmelab/react-admin/pull/10468)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* [Demo] Simplify demo titles ([#10461](https://github.com/marmelab/react-admin/pull/10461)) ([djhi](https://github.com/djhi))
+* [Demo] Fix UI glitches due to multiple conflicting MUI packages ([#10464](https://github.com/marmelab/react-admin/pull/10464)) ([djhi](https://github.com/djhi))
+* [Tutorial] Fix tutorial has multiple conflicting MUI packages ([#10465](https://github.com/marmelab/react-admin/pull/10465)) ([djhi](https://github.com/djhi))
+
 ## 5.5.0
 
 * Add support for React router v7 ([#10440](https://github.com/marmelab/react-admin/pull/10440)) ([djhi](https://github.com/djhi))
