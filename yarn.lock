@@ -16178,9 +16178,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"ra-data-local-forage@workspace:packages/ra-data-localforage":
+"ra-data-local-forage@workspace:packages/ra-data-local-forage":
   version: 0.0.0-use.local
-  resolution: "ra-data-local-forage@workspace:packages/ra-data-localforage"
+  resolution: "ra-data-local-forage@workspace:packages/ra-data-local-forage"
   dependencies:
     cross-env: "npm:^5.2.0"
     localforage: "npm:^1.7.1"
@@ -16193,9 +16193,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"ra-data-local-storage@npm:^5.0.0, ra-data-local-storage@npm:^5.5.3, ra-data-local-storage@workspace:packages/ra-data-localstorage":
+"ra-data-local-storage@npm:^5.0.0, ra-data-local-storage@npm:^5.5.3, ra-data-local-storage@workspace:packages/ra-data-local-storage":
   version: 0.0.0-use.local
-  resolution: "ra-data-local-storage@workspace:packages/ra-data-localstorage"
+  resolution: "ra-data-local-storage@workspace:packages/ra-data-local-storage"
   dependencies:
     cross-env: "npm:^5.2.0"
     lodash: "npm:~4.17.5"
@@ -17757,11 +17757,11 @@ __metadata:
   linkType: hard
 
 "serialize-javascript@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "serialize-javascript@npm:6.0.1"
+  version: 6.0.2
+  resolution: "serialize-javascript@npm:6.0.2"
   dependencies:
     randombytes: "npm:^2.1.0"
-  checksum: 1af427f4fee3fee051f54ffe15f77068cff78a3c96d20f5c1178d20630d3ab122d8350e639d5e13cde8111ef9db9439b871305ffb185e24be0a2149cec230988
+  checksum: 2dd09ef4b65a1289ba24a788b1423a035581bef60817bea1f01eda8e3bda623f86357665fe7ac1b50f6d4f583f97db9615b3f07b2a2e8cbcb75033965f771dd2
   languageName: node
   linkType: hard
 
