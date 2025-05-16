@@ -5,7 +5,7 @@ import {
     useListContext,
     useEvent,
 } from 'ra-core';
-import { Box, CircularProgress, SxProps } from '@mui/material';
+import { Box, CircularProgress, type SxProps, type Theme } from '@mui/material';
 
 /**
  * A pagination component that loads more results when the user scrolls to the bottom of the list.
@@ -67,7 +67,16 @@ export const InfinitePagination = ({
     if (isPending) return null;
 
     return (
-        <Box ref={observerElem} py={2} textAlign="center" sx={sx}>
+        <Box
+            ref={observerElem}
+            sx={[
+                {
+                    py: 2,
+                    textAlign: 'center',
+                },
+                ...(Array.isArray(sx) ? sx : [sx]),
+            ]}
+        >
             {isFetchingNextPage && hasNextPage && (
                 <CircularProgress size="1.5em" />
             )}
@@ -79,5 +88,5 @@ const defaultOptions = { threshold: 0 };
 
 export interface InfinitePaginationProps {
     options?: IntersectionObserverInit;
-    sx?: SxProps;
+    sx?: SxProps<Theme>;
 }

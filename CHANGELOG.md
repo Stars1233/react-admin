@@ -1,5 +1,54 @@
 # Changelog
 
+## 5.8.2
+
+* Fix `<AutocompleteInput>` with `optionValue` and create raises a React warning ([#10747](https://github.com/marmelab/react-admin/pull/10747)) ([slax57](https://github.com/slax57))
+* Fix `useInfiniteListController` does not return response `meta` ([#10746](https://github.com/marmelab/react-admin/pull/10746)) ([slax57](https://github.com/slax57))
+* Fix `create-react-admin --help` does not show help consistently ([#10744](https://github.com/marmelab/react-admin/pull/10744)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* Fix compatibility of unit tests with react-hook-form 7.56.x ([#10742](https://github.com/marmelab/react-admin/pull/10742)) ([slax57](https://github.com/slax57))
+* Fix outlined inputs when label is false ([#10740](https://github.com/marmelab/react-admin/pull/10740)) ([fzaninotto](https://github.com/fzaninotto))
+* Fix `<SelectArrayInput>` sanitizes unused props ([#10739](https://github.com/marmelab/react-admin/pull/10739)) ([ghadabezine](https://github.com/ghadabezine))
+* Fix `Arrayinput` multiple reset ([#10716](https://github.com/marmelab/react-admin/pull/10716)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+* Fix MUI7 compatibility by not using deprecated system props ([#10680](https://github.com/marmelab/react-admin/pull/10680)) ([smeng9](https://github.com/smeng9))
+* [Doc] Fix remaining `<AutocompleteArrayInput>` and `<SelectArrayInput>` `create` examples ([#10741](https://github.com/marmelab/react-admin/pull/10741)) ([slax57](https://github.com/slax57))
+* [Doc] Document how to pass extra options to create-react-admin when using npm create ([#10737](https://github.com/marmelab/react-admin/pull/10737)) ([slax57](https://github.com/slax57))
+* [tips] Backport last AgGrid tips ([#10731](https://github.com/marmelab/react-admin/pull/10731)) ([erwanMarmelab](https://github.com/erwanMarmelab))
+
+## 5.8.1
+
+* Fix `<Confirm>` ignore simple string `title` and `content` props ([#10723](https://github.com/marmelab/react-admin/pull/10723)) ([djhi](https://github.com/djhi))
+* Fix `<AutocompleteInput>` and `<SelectInput>` renders undefined instead of the `createLabel` when `optionText` is a function or a `recordRepresentation` is set ([#10715](https://github.com/marmelab/react-admin/pull/10715)) ([slax57](https://github.com/slax57))
+* [Doc] Fix documentation build ([#10730](https://github.com/marmelab/react-admin/pull/10730)) ([djhi](https://github.com/djhi))
+* [Doc] Fix documentation deployment for previous versions navigation ([#10725](https://github.com/marmelab/react-admin/pull/10725)) ([djhi](https://github.com/djhi))
+* [DOC] Rewrite select array input create doc ([#10711](https://github.com/marmelab/react-admin/pull/10711)) ([Cimanel](https://github.com/Cimanel))
+* [DOC] selectInput create example + storie ([#10710](https://github.com/marmelab/react-admin/pull/10710)) ([Cimanel](https://github.com/Cimanel))
+* [Demo] Fix theme switching ([#10732](https://github.com/marmelab/react-admin/pull/10732)) ([djhi](https://github.com/djhi))
+* [chore] Upgrade vite ([#10660](https://github.com/marmelab/react-admin/pull/10660)) ([djhi](https://github.com/djhi))
+* Bump vite from 6.2.6 to 6.2.7 ([#10726](https://github.com/marmelab/react-admin/pull/10726)) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## 5.8.0
+
+* Add `<InPlaceEditor>` for edit-in-place ([#10690](https://github.com/marmelab/react-admin/pull/10690)) ([fzaninotto](https://github.com/fzaninotto))
+* Add `<DataTable>` component ([#10597](https://github.com/marmelab/react-admin/pull/10597)) ([fzaninotto](https://github.com/fzaninotto))
+* Add `<AuthLayout>` to share layout of login page with register & forgot password pages ([#10640](https://github.com/marmelab/react-admin/pull/10640)) ([djhi](https://github.com/djhi))
+* Add support for defaultProps override via theme ([#10655](https://github.com/marmelab/react-admin/pull/10655)) ([djhi](https://github.com/djhi))
+* Add support for MUI v7 ([#10639](https://github.com/marmelab/react-admin/pull/10639)) ([djhi](https://github.com/djhi))
+* Add ability to configure `<Loading>` timeout ([#10689](https://github.com/marmelab/react-admin/pull/10689)) ([WiXSL](https://github.com/WiXSL))
+* Improve `<DeleteButton>` and `<UpdateButton>` confirmation wording using record representation ([#10654](https://github.com/marmelab/react-admin/pull/10654)) ([djhi](https://github.com/djhi))
+* [Doc] Rewrite `<AutocompleteArrayInput>` create doc example ([#10700](https://github.com/marmelab/react-admin/pull/10700)) ([Cimanel](https://github.com/Cimanel))
+* [chore] create-react-admin: Remove sourcemaps from production build ([#10693](https://github.com/marmelab/react-admin/pull/10693)) ([slax57](https://github.com/slax57))
+* Bump json-graphql-server to 3.2.0 ([#10713](https://github.com/marmelab/react-admin/pull/10713)) ([fzaninotto](https://github.com/fzaninotto))
+* Bump react-router from 7.1.1 to 7.5.3 ([#10712](https://github.com/marmelab/react-admin/pull/10712)) ([fzaninotto](https://github.com/fzaninotto))
+
+## 5.7.4
+
+* Fix `<FilterLiveForm>` compatibility with react-hook-form 7.55.0, part 2 ([#10697](https://github.com/marmelab/react-admin/pull/10697)) ([slax57](https://github.com/slax57))
+* Fix `<SelectInput>` shows gap in border when using no label with outlined variant ([#10692](https://github.com/marmelab/react-admin/pull/10692)) ([fzaninotto](https://github.com/fzaninotto))
+* Fix `canAccess` is called even when `disableAuthentication` is `true` ([#10691](https://github.com/marmelab/react-admin/pull/10691)) ([slax57](https://github.com/slax57))
+* [Doc] improve AutocompleteInput create example ([#10696](https://github.com/marmelab/react-admin/pull/10696)) ([Cimanel](https://github.com/Cimanel))
+* [Demo] Fix unneeded check in CRM demo ([#10694](https://github.com/marmelab/react-admin/pull/10694)) ([afilp](https://github.com/afilp))
+* [chore] ESLint: (re)enable import rules ([#10685](https://github.com/marmelab/react-admin/pull/10685)) ([slax57](https://github.com/slax57))
+
 ## 5.7.3
 
 * Fix `<ShowGuesser>` print incorrect code for reference arrays ([#10682](https://github.com/marmelab/react-admin/pull/10682)) ([djhi](https://github.com/djhi))

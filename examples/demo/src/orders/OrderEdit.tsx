@@ -67,13 +67,25 @@ const CustomerAddress = () => {
     );
 };
 
-const Spacer = () => <Box mb={1}>&nbsp;</Box>;
+const Spacer = () => (
+    <Box
+        sx={{
+            mb: 1,
+        }}
+    >
+        &nbsp;
+    </Box>
+);
 
 const OrderForm = () => {
     const translate = useTranslate();
     return (
         <Form>
-            <Box maxWidth="50em">
+            <Box
+                sx={{
+                    maxWidth: '50em',
+                }}
+            >
                 <PrevNextButtons
                     filterDefaultValues={{ status: 'ordered' }}
                     sort={{ field: 'date', order: 'DESC' }}
@@ -81,26 +93,26 @@ const OrderForm = () => {
                 <Card>
                     <CardContent>
                         <Grid container spacing={1}>
-                            <Grid item xs={12} sm={12} md={8}>
+                            <Grid size={{ xs: 12, sm: 12, md: 8 }}>
                                 <Typography variant="h6" gutterBottom>
                                     {translate(
                                         'resources.orders.section.order'
                                     )}
                                 </Typography>
                                 <Grid container>
-                                    <Grid item xs={12} sm={12} md={6}>
+                                    <Grid size={{ xs: 12, sm: 12, md: 6 }}>
                                         <Labeled source="date">
                                             <DateField source="date" />
                                         </Labeled>
                                     </Grid>
-                                    <Grid item xs={12} sm={12} md={6}>
+                                    <Grid size={{ xs: 12, sm: 12, md: 6 }}>
                                         <Labeled source="reference">
                                             <TextField source="reference" />
                                         </Labeled>
                                     </Grid>
                                 </Grid>
                                 <Grid container>
-                                    <Grid item xs={12} sm={12} md={6}>
+                                    <Grid size={{ xs: 12, sm: 12, md: 6 }}>
                                         <SelectInput
                                             source="status"
                                             choices={[
@@ -125,8 +137,12 @@ const OrderForm = () => {
                                             sx={{ width: '80%' }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12} sm={12} md={6}>
-                                        <Box mt={2}>
+                                    <Grid size={{ xs: 12, sm: 12, md: 6 }}>
+                                        <Box
+                                            sx={{
+                                                mt: 2,
+                                            }}
+                                        >
                                             <BooleanInput
                                                 row={true}
                                                 source="returned"
@@ -135,7 +151,7 @@ const OrderForm = () => {
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            <Grid item xs={12} sm={12} md={4}>
+                            <Grid size={{ xs: 12, sm: 12, md: 4 }}>
                                 <Typography variant="h6" gutterBottom>
                                     {translate(
                                         'resources.orders.section.customer'

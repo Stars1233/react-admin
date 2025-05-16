@@ -5,7 +5,7 @@ import {
     ExportButton,
     FilterButton,
     List,
-    SelectColumnsButton,
+    ColumnsButton,
     TopToolbar,
     useDefaultTitle,
     useListContext,
@@ -22,7 +22,7 @@ const ReviewListActions = () => (
     <TopToolbar>
         <FilterButton />
         <CreateButton />
-        <SelectColumnsButton />
+        <ColumnsButton />
         <ExportButton />
     </TopToolbar>
 );
@@ -52,7 +52,11 @@ const ReviewList = () => {
     const match = matchPath('/reviews/:id', location.pathname);
 
     return (
-        <Box display="flex">
+        <Box
+            sx={{
+                display: 'flex',
+            }}
+        >
             <List
                 sx={{
                     flexGrow: 1,
